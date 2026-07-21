@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://todayongh.online/sitemap.xml
+Sitemap: https://todayongh.onl/sitemap.xml

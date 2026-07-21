@@ -111,8 +111,8 @@ function Render-Post($post) {
     $body = ($bodyParts -join "`r`n")
     $titleEnc = HtmlEnc $post.Title
     $dekEnc = HtmlEnc $post.Dek
-    $url = "https://todayongh.online/$slug.html"
-    $ogImg = "https://todayongh.online/$firstImageRel"
+    $url = "https://todayongh.onl/$slug.html"
+    $ogImg = "https://todayongh.onl/$firstImageRel"
 
     $html = @"
 <!DOCTYPE html>
@@ -143,7 +143,7 @@ function Render-Post($post) {
     "publisher": {
       "@type": "Organization",
       "name": "Today On General Hospital",
-      "logo": { "@type": "ImageObject", "url": "https://todayongh.online/assets/img/favicon.svg" }
+      "logo": { "@type": "ImageObject", "url": "https://todayongh.onl/assets/img/favicon.svg" }
     }
   }
   </script>
@@ -274,12 +274,12 @@ function Build-Listings {
   <title>General Hospital Recaps - Today On General Hospital</title>
   <meta name="description" content="Daily General Hospital recaps. Catch up on every GH episode with detailed recaps covering all the key moments from Port Charles." />
   <meta name="keywords" content="General Hospital recap, GH recap, GH daily recap, General Hospital episode recap" />
-  <link rel="canonical" href="https://todayongh.online/recaps.html" />
+  <link rel="canonical" href="https://todayongh.onl/recaps.html" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="General Hospital Recaps - Today On General Hospital" />
   <meta property="og:description" content="Daily General Hospital episode recaps covering every key moment." />
-  <meta property="og:url" content="https://todayongh.online/recaps.html" />
+  <meta property="og:url" content="https://todayongh.onl/recaps.html" />
   <link rel="icon" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -387,13 +387,13 @@ $cards
   <title>Today On General Hospital - Spoilers, Recaps &amp; News</title>
   <meta name="description" content="Today On General Hospital brings you daily General Hospital recaps, spoilers and news. Your #1 fan source for everything happening in Port Charles." />
   <meta name="keywords" content="General Hospital, GH spoilers, General Hospital recap, GH news, Today On General Hospital, Port Charles" />
-  <link rel="canonical" href="https://todayongh.online/" />
+  <link rel="canonical" href="https://todayongh.onl/" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Today On General Hospital" />
   <meta property="og:title" content="Today On General Hospital - Spoilers, Recaps &amp; News" />
   <meta property="og:description" content="Daily General Hospital recaps, spoilers and news from Port Charles." />
-  <meta property="og:url" content="https://todayongh.online/" />
+  <meta property="og:url" content="https://todayongh.onl/" />
   <link rel="icon" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script type="application/ld+json">
@@ -401,7 +401,7 @@ $cards
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Today On General Hospital",
-    "url": "https://todayongh.online/"
+    "url": "https://todayongh.onl/"
   }
   </script>
 </head>
@@ -514,10 +514,10 @@ $sideList
     $sm += '<?xml version="1.0" encoding="UTF-8"?>'
     $sm += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
     foreach ($u in $staticUrls) {
-        $sm += '  <url><loc>https://todayongh.online/' + $u + '</loc></url>'
+        $sm += '  <url><loc>https://todayongh.onl/' + $u + '</loc></url>'
     }
     foreach ($p in $sorted) {
-        $sm += '  <url><loc>https://todayongh.online/' + $p.Slug + '.html</loc><lastmod>' + $p.Date + '</lastmod></url>'
+        $sm += '  <url><loc>https://todayongh.onl/' + $p.Slug + '.html</loc><lastmod>' + $p.Date + '</lastmod></url>'
     }
     $sm += '</urlset>'
     Set-Content -Path (Join-Path $script:Root 'sitemap.xml') -Value ($sm -join "`r`n") -Encoding UTF8

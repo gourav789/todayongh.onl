@@ -2,7 +2,7 @@
 
 Facebook jaisa design wali static website — General Hospital ke daily **Spoilers, Recaps aur News** ke liye. GitHub Pages par deploy hone ke liye ready hai.
 
-Domain: **https://todayongh.online**
+Domain: **https://todayongh.onl**
 
 ---
 
@@ -20,7 +20,7 @@ disclaimer.html       -> Disclaimer (700 words)
 404.html              -> Page not found
 sitemap.xml           -> Search Console ke liye
 robots.txt            -> Search engines ke liye
-CNAME                 -> Custom domain (todayongh.online)
+CNAME                 -> Custom domain (todayongh.onl)
 .nojekyll             -> GitHub Pages ke liye zaroori
 assets/css/style.css  -> Puri design/styling
 assets/js/main.js     -> Mobile menu + chhote features
@@ -37,7 +37,7 @@ Design **mobile aur PC dono par** apne aap fit ho jaata hai. Baar baar kuch karn
 2. Is folder ke saare files repo me upload/push karo.
 3. Repo me jao: **Settings > Pages**.
 4. "Source" me **Deploy from a branch** choose karo, branch `main` aur folder `/ (root)` select karo, Save.
-5. Custom domain ke liye `todayongh.online` daalo (CNAME file already ready hai).
+5. Custom domain ke liye `todayongh.onl` daalo (CNAME file already ready hai).
 6. Apne domain provider (jaha se domain liya) par DNS me ye records add karo:
    - `A` record -> `185.199.108.153`
    - `A` record -> `185.199.109.153`
@@ -91,7 +91,7 @@ Tips:
 ## Google Search Console me kaise dalein
 
 1. https://search.google.com/search-console par jao.
-2. Property add karo: `https://todayongh.online`.
+2. Property add karo: `https://todayongh.onl`.
 3. Ownership verify karo (HTML tag method sabse easy — jo tag mile use
    har page ke `<head>` me daal do, ya DNS method use karo).
 4. **Sitemaps** section me jao aur `sitemap.xml` submit karo.

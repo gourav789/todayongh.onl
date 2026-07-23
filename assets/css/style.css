@@ -430,6 +430,28 @@ img {
   text-align: center;
 }
 
+/* MGID in-content ad slot */
+.mgid-ad {
+  margin: 24px 0;
+  text-align: center;
+  min-height: 1px;
+  clear: both;
+}
+
+.mgid-ad::before {
+  content: "Advertisement";
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.mgid-ad > div {
+  min-height: 1px;
+}
+
 .article .article-dek {
   font-size: 1.1rem;
   color: var(--text-muted);

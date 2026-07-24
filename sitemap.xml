@@ -41,6 +41,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://todayongh.onl/general-hospital-recap-24-july-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todayongh.onl/news</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
